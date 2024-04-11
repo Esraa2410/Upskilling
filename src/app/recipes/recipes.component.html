@@ -1,0 +1,22 @@
+<div class="container  text-center w-75">
+    <div class="row ">
+        <div class="col-md-12">
+            <h2 style="font-size: 6em;" class=" me-auto fw-bolder  mt-4 main-font-color ">RECIPES</h2>
+        </div>
+        <div *ngFor="let recipe of recipes" class="col-md-4 p-3 outter-div">
+            <div class="inner-div">
+                <div>
+                    <img class="w-100 " [src]="recipe.strMealThumb" alt="">
+                </div>
+                <h5 class="main-font-color text-start ps-4 pe-2 fw-bold mt-4 mb-1">{{recipe.strMeal}}</h5>
+                <p class="text-start ps-4 pe-2">Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry. Lorem Ipsum has been the industry's standard dummy text ever
+                    since the 1500s, when an unknown printer took a galley of type and scrambled
+                </p>
+            </div>
+        </div>
+    </div>
+    <button class="me-auto btn btn-warning btn-modify fw-bolder my-2 px-4 py-2">
+        <a href="#contacUs">CONTACT US</a>
+    </button>
+</div>

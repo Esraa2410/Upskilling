@@ -1,0 +1,47 @@
+
+
+
+.left-side {
+    background-image: url("../../assets/Mask Group (2).svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.left-side p {
+    color: #C98A40;
+
+}
+
+.how-work-slide {
+    position: absolute;
+    bottom: -79%;
+    left: 11%;
+}
+
+
+@media(min-width:0px) and (max-width:767px){
+    .slide-image {
+     display: none!important;
+    }
+    
+    .p-in-how-sec{
+        justify-content: center!important;
+        align-items: center!important;    
+    }
+
+    .p-in-how-sec p{
+        padding: 0!important;
+        margin: 0!important;
+        margin-bottom: 50px!important;
+    }
+    
+
+    
+}
+
+@media(min-width:0px) and (max-width:992px){
+    .row h2{
+        font-size: 3rem!important;
+    }
+}

@@ -1,0 +1,70 @@
+<div class="container m-5  " id="contacUs">
+    
+    <div class="row  " >
+        <div class="col-md-12  text-center">
+             <h2 style="font-size: 5rem;" class="main-font-color  fw-bolder text-center ">CONTACT US</h2>
+        </div>
+       
+        <div class="col-md-6">
+            <div *ngIf="apiSuc" class="alert alert-info p-3 ps-4 w-75 ms-auto">
+                <i class="fa-solid fa-circle-check"></i>
+                {{apiSuc}}
+        
+            </div>
+          <!--   <div *ngIf="apiError" class="alert alert-danger p-3 ps-4 w-75 ms-auto">
+                {{apiError}}
+        
+            </div> -->
+            <form class=" " (ngSubmit)="handleRegisterForm(registerForm)" [formGroup]="registerForm">
+                <input formControlName="name" type="text" name="name" id="name" placeholder="Full Name"
+                    class="form-control my-3 p-3 ps-4 w-75 ms-auto">
+                <div *ngIf="registerForm.get('name')?.errors && registerForm.get('name')?.touched"
+                    class="alert alert-danger  p-2 ps-4 w-75 ms-auto ">
+                    <p *ngIf="registerForm.get('name')?.getError('required')|json" class="mb-0">Name is Required </p>
+                    <p *ngIf="registerForm.get('name')?.getError('minlength')|json" class="mb-0">Name minLength is 3
+                    </p>
+                    <p *ngIf="registerForm.get('name')?.getError('maxlength')|json" class="mb-0">Name maxLength is 20
+                    </p>
+                </div>
+                <input formControlName="email" type="email" name="email" id="email" placeholder="Email"
+                    class="form-control my-3 p-3 ps-4 w-75 ms-auto">
+                <div *ngIf="registerForm.get('email')?.errors && registerForm.get('email')?.touched"
+                    class="alert alert-danger  p-2 ps-4 w-75 ms-auto">
+                    <p *ngIf="registerForm.get('email')?.getError('required')|json" class="mb-0">Email is Required </p>
+                    <p *ngIf="registerForm.get('email')?.getError('email')|json" class="mb-0">Email inavaliable</p>
+                </div>
+                <input formControlName="phone" type="tel" name="tel" id="tel" placeholder="Phone Number"
+                    class="form-control my-3 p-3 ps-4 w-75 ms-auto">
+                <div *ngIf="registerForm.get('phone')?.errors && registerForm.get('phone')?.touched"
+                    class="alert alert-danger  p-2 ps-4 w-75 ms-auto">
+                    <p *ngIf="registerForm.get('phone')?.getError('required')|json" class="mb-0">Phone is Required </p>
+                    <p *ngIf="registerForm.get('phone')?.getError('pattern')|json" class="mb-0">Must Enter Egyption
+                        Phone Number </p>
+                </div>
+
+                <button class="btn btn-outline-primary  fw-bold " type="submit" [disabled]="registerForm.invalid" >
+                    <i *ngIf="isLoading" class="fas fa-spinner fa-spin"></i>
+                    <span *ngIf="!isLoading">SEND</span>
+                    </button>
+            </form>
+        </div>
+
+        <div class="col-md-5 d-flex justify-content-center align-items-center">
+            <div class=" ">
+                <div class="d-flex justify-content-evenley align-items-center  p-3 ">
+                    <img class="ms-0 ps-0 me-3" src="../../assets/ic_round-mail.svg" alt="">
+                    <a href="https://upskilling-egypt.com/#/home"
+                        class="mt-0 pt-0 mb-0 pb-0 modify-a">upskilling.eg1@gmail.com</a>
+                </div>
+                <div class="d-flex justify-content-evenley align-items-center p-3 ">
+                    <img class="ms-0 ps-0 me-3 " src="../../assets/ic_round-call.svg" alt="">
+                    <a href="https://www.facebook.com/UpskillingEG"
+                        class="mt-0 pt-0 mb-0 pb-0 modify-a">+20 115 493 2137</a>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- <button class="btn btn-outline-primary  fw-bold " type="submit" >SEND</button> -->
+    </div>
+</div>

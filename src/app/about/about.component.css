@@ -1,0 +1,22 @@
+.bakery-image{
+    width: 35%;
+    position: absolute;
+    right:10% ;
+}
+
+
+@media(min-width:0px) and (max-width:767px) {
+    .bakery-image {
+        display: none;
+    }
+}
+
+@media(min-width:768) and (max-width:992px){
+
+    .row h2{
+        font-size: 3rem!important;
+    }
+ 
+}
+
+

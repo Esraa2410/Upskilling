@@ -1,0 +1,13 @@
+
+.container-modifiy{
+    background-image: url("../../assets/Mask Group (3).svg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+ 
+}
+
+@media(min-width:0px) and (max-width:992px){
+    .row h2{
+        font-size: 3rem!important;
+    }
+}

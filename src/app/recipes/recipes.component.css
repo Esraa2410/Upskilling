@@ -1,0 +1,26 @@
+.inner-div{
+    border: 1px solid #FFD8AB;
+    border-radius: 30px;
+}
+
+img{
+    border-radius: 30px;
+}
+
+
+@media(min-width:0px) and (max-width:992px){
+    .row h2{
+        font-size: 3rem!important;
+    }
+
+}
+
+
+
+@media(min-width:0) and (max-width:992px){
+h5,p{
+    font-size: 14px!important;
+}
+
+
+}

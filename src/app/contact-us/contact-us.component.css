@@ -1,0 +1,49 @@
+.form-control{
+    background-color:  #FFD39F !important;
+    border-radius: 61px!important;
+    border: none!important;
+}
+
+input[placeholder]{
+    font-size: 14px;
+    font-weight: 800;
+    color: #584125 !important;
+    
+}
+
+
+.btn-outline-primary{
+    width: 26%;
+    border-radius: 30px!important;
+    border-color: #C98A40!important;
+    color: black!important;
+    margin-left: 50%!important;
+}
+
+
+.btn-outline-primary:hover{
+    background-color: #C98A40!important;
+    color: #fff!important;
+
+}
+
+
+.modify-a{
+    cursor: pointer;
+    
+}
+
+
+
+@media(min-width:0px) and (max-width:992px){
+    .row h2{
+        font-size: 3rem!important;
+    }
+
+
+    #contacUs{
+        margin: 0px!important;
+    }
+
+   
+}

@@ -1,0 +1,53 @@
+
+.rigth-side {
+    background-image: url("../../assets/Mask Group.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+
+.bread-image {
+    width: 33%;
+    position: absolute;
+    top: 34%;
+    left: 52%;
+}
+
+.mask-image {
+    margin: 0px !important;
+    padding: 0px !important;
+    background-color: #fff;
+    position: absolute;
+    width: 23%;
+    /* height: 23%; */
+    left: 0%;
+    bottom: 0%;
+   
+}
+
+.mask-image img {
+    margin: 0px !important;
+    padding: 0px !important;
+    width: 100%;
+    height: 100%;
+     position: relative;
+}
+
+.social-list{
+    position: absolute;
+    right: 7%;
+    top:0%;
+    bottom: 0%;
+}
+
+@media(min-width:0px) and (max-width:767px) {
+    .bread-image {
+        display: none;
+    }
+
+    .mask-image {
+        display: none;
+    }
+
+}
